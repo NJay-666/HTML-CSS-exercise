@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: #231C1A;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+}
+h1{
+    color: #F2E9E4;
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+}
+header a{
+    color: #F2E9E4;
+    text-decoration: none;
+}
+img{
+    width: 50%;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+}
+header ul{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+.a{
+    background-color: antiquewhite;
+    color: black;
+    height: 85vh;
+    background-image: url(image/PC.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.a p{
+    font-size: 18px;
+    margin: 25px 0;
+}
+.a h2{
+    font-size: 30px;
+}
+.a ul{
+    color: black;
+    text-decoration: none;
+    border: 1px solid #ACACAC;
+    padding: 10px 20px;
+}
+.b{
+    background-color: #485632;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.8em;
+}
+footer{
+    background-color: #000;
+    color: #B7B7B7;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+.c{
+    display: flex; 
+}
+.c img{
+    width: 50%;
+}
+.text{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text h3{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.text p{
+    line-height: 2em;
+    text-align: center;
+}
+.d{
+    display: flex;
+    background-color: #ede9db;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 180px 80px;
+}
+.d div{
+    width: 300px;
+    text-align: center;
+}
+.d img{
+    width: 200px;        
+    height: 200px;       
+    object-fit: contain;
+    border-radius: 10px;
+}
+.d h4{
+    font-size: 20px;
+    margin: 20px 0;
+}
+.d p{
+    line-height: 1.6em;
+    font-size: 14px;
+}
+.e{
+    background-color: #485652;
+    color: white;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.e p{
+    margin-bottom: 20px;
+}
+.e input, .e button{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px ;
+    border-radius: 8px;
+}
+.e input{
+    width: 200px;
+    margin-right: 15px;
+}
+.e button{
+    width: 80px;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+/*響應式設計*/
+@media screen and (max-width: 768px) {
+    header ul {
+        display: none;
+    }
+    header h1 {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .c h3 {
+        font-size: 40px;
+    }
+    .menu {
+        display: block;
+        background-color: transparent;
+        border: none;
+        color: #F2E9E4;
+        font-size: 35px;
+        position: absolute;
+        top: 15px;
+        left: 20px;
+        cursor: pointer;
+    }
+    .c {
+        flex-direction: column;
+    }
+    .c img{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+        padding: 40px 0;
+    }
+    .text h3{
+        font-size: 30px;
+    }
+    .d{
+        flex-direction: column;
+        padding: 60px 0;
+    }
+    .d div{
+        margin-bottom: 30px;
+    }
+    .a{
+        height: 70vh;
+    }
+}
